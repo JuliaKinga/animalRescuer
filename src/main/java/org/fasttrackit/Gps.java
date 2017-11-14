@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
 public class Gps {
-    String directions;
-    String activities;
+    String places;
+    String activity;
 }

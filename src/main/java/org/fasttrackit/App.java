@@ -1,6 +1,10 @@
 package org.fasttrackit;
 
-public class App 
+import org.fasttrackit.accesories.Toy;
+
+import java.time.LocalDate;
+
+public class App
 {
     public static void main( String[] args ) {
         Dog dog = new Dog();
@@ -15,7 +19,7 @@ public class App
 
         Rescuer rescuer = new Rescuer();
         rescuer.name = "Julia";
-        rescuer.home = "appartment";
+        rescuer.homeType = "appartment";
         rescuer.money = 500;
 
 
@@ -32,15 +36,7 @@ public class App
         Planner planner = new Planner();
         planner.todo = "walk";
         planner.appointments = "doctor";
-        planner.calendar = "training";
         planner.events = "birthday";
-
-        Item item = new Item();
-        item.bed = "fluffy";
-        item.bowl = "double";
-        item.clothes = "coat";
-        item.collar = "gps";
-        item.toys = "chew";
 
         DogFood dogFood = new DogFood();
         dogFood.type = "dry";
@@ -52,5 +48,20 @@ public class App
 
         Training training = new Training();
         training.command = "sit";
-        training.sound = "whistle";}
+        training.sound = "whistle";
+
+        Calendar calendar = new Calendar();
+        calendar.acitvityName = "training";
+        calendar.date = LocalDate.now();
+
+
+
+
+
+
+
+
+
+
+    }
 }

@@ -4,6 +4,7 @@ public class Rescuer {
 
     String name;
     double money;
-    String home;
+    String homeType;
+
 
 }

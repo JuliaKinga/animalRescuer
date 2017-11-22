@@ -8,51 +8,53 @@ public class App
 {
     public static void main( String[] args ) {
         Dog dog = new Dog();
-        dog.name = "Rocky";
-        dog.age = 2.5;
-        dog.healthCondition = "healthy";
-        dog.breed = "schnauzer";
-        dog.weight = 6.5;
-        dog.hight = 32.5;
-        dog.color = "black";
-        dog.role = "companionship";
+        dog.setName("Rocky");
+        dog.setAge(2.5);
+        dog.setHealthCondition("healthy");
+        dog.setBreed("schnauzer");
+
+        Cat cat = new Cat();
+        cat.setColor("black");
+        cat.setHight(20);
+        cat.setWeight(3.7);
+        cat.setRole("companionship");
 
         Rescuer rescuer = new Rescuer();
-        rescuer.name = "Julia";
-        rescuer.homeType = "appartment";
-        rescuer.money = 500;
+        rescuer.setName("Julia");
+        rescuer.setHomeType("appartment");
+        rescuer.setMoney(500);
 
 
         Vet vet = new Vet();
-        vet.specialization ="ClinicalPathology";
-        vet.locator = "Cluj";
-        vet.directions = "center";
-        vet.name = "Laura";
+        vet.setSpecialization("ClinicalPathology");
+        vet.setLocator("Cluj");
+        vet.setDirections("center");
+        vet.setName("Laura");
 
         Gps gps = new Gps();
-        gps.activity = "walking";
-        gps.places = "parks";
+        gps.setActivity("walking");
+        gps.setPlaces("parks");
 
         Planner planner = new Planner();
-        planner.todo = "walk";
-        planner.appointments = "doctor";
-        planner.events = "birthday";
+        planner.setTodo("walk");
+        planner.setAppointments("doctor");
+        planner.setEvents("birthday");
 
         DogFood dogFood = new DogFood();
-        dogFood.type = "dry";
-        dogFood.brand = "pedigree";
-        dogFood.flavor = "chicken";
-        dogFood.packaging = "bag";
-        dogFood.price = 100;
-        dogFood.quantity = 9.5;
+        dogFood.setType("dry");
+        dogFood.setBrand("pedigree");
+        dogFood.setFlavor("chicken");
+        dogFood.setPackaging("bag");
+        dogFood.setPrice(100);
+        dogFood.setQuantity(9.5);
 
         Training training = new Training();
-        training.command = "sit";
-        training.sound = "whistle";
+        training.setCommand("sit");
+        training.setSound("whistle");
 
         Calendar calendar = new Calendar();
-        calendar.acitvityName = "training";
-        calendar.date = LocalDate.now();
+        calendar.setAcitvityName("training");
+        calendar.setDate(LocalDate.now());
 
 
 

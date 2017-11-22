@@ -1,14 +1,41 @@
 package org.fasttrackit;
 
-public class Dog {
+public class Dog extends Cat{
 
-    String name;
-    double age;
-    String healthCondition;
-    String breed;
-    double weight;
-    double hight;
-    String color;
-    String role;
+    private double age;
+    private String healthCondition;
+    private String breed;
+    private String name;
 
+    public double getAge() {
+        return age;
+    }
+
+    public void setAge(double age) {
+        this.age = age;
+    }
+
+    public String getHealthCondition() {
+        return healthCondition;
+    }
+
+    public void setHealthCondition(String healthCondition) {
+        this.healthCondition = healthCondition;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

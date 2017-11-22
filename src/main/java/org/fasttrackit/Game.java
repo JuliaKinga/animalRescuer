@@ -3,7 +3,7 @@ package org.fasttrackit;
 public class Game {
 
     Rescuer rescuer;
-    Dog dog;
+    Animal animal;
     DogFood dogFood;
     Vet vet;
 }

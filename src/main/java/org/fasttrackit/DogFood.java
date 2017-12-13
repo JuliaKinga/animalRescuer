@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
-public class DogFood {
+public class DogFood extends Food {
+
     private double price;
     private double quantity;
     private String flavor;

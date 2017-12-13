@@ -4,15 +4,16 @@ import java.time.LocalDate;
 
 public class Calendar extends Planner {
 
-    private String acitvityName;
+    private String activityName;
     private LocalDate date;
 
     public String getAcitvityName() {
-        return acitvityName;
+        return activityName;
+
     }
 
     public void setAcitvityName(String acitvityName) {
-        this.acitvityName = acitvityName;
+        this.activityName = acitvityName;
     }
 
     public LocalDate getDate() {

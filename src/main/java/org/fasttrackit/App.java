@@ -56,7 +56,8 @@ public class App
         calendar.setAcitvityName("training");
         calendar.setDate(LocalDate.now());
 
-
+        rescuer.feed(dog, dogFood);
+        rescuer.entertain(dog,EntertainmentActivity);
 
 
 

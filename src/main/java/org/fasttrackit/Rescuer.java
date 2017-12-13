@@ -5,7 +5,7 @@ public class Rescuer {
     private String name;
     private double money;
     private String homeType;
-    public String feed;
+
 
     public String getName() {
         return name;
@@ -30,4 +30,13 @@ public class Rescuer {
     public void setHomeType(String homeType) {
         this.homeType = homeType;
     }
-}
+
+
+    public void feed(Animal animal, DogFood dogFood) {
+        System.out.println(this.name + "just gave some" + dogFood.getName() + "food to" + animal.getName());}
+
+    public void entertain (Animal animal, EntertainmentActivity entertainmentActivity) {
+        System.out.println(this.name + "just did some" + getName() + "run" + animal.getName());
+
+
+    }}

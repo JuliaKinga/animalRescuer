@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
-public class Cat {
+public class Cat extends Animal {
+
 
     private double weight;
     private double hight;

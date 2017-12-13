@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
-public class Dog extends Cat{
+public class Dog extends Animal {
+
 
     private double age;
     private String healthCondition;

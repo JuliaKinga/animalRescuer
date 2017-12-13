@@ -1,10 +1,11 @@
 package org.fasttrackit;
 
-public class Animal extends Dog {
+public class Animal{
 
     private String gender;
     private String favoriteFoodName;
     private String favoriteActivityName;
+    public String name;
 
     public String getGender() {
         return gender;
@@ -26,8 +27,17 @@ public class Animal extends Dog {
         return favoriteActivityName;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void setFavoriteActivityName(String favoriteActivityName) {
         this.favoriteActivityName = favoriteActivityName;
+
+
     }
-}
 }

@@ -3,17 +3,17 @@ package org.fasttrackit;
 public class Dog extends Animal {
 
 
-    private double age;
+    private double Age;
     private String healthCondition;
     private String breed;
     private String name;
 
     public double getAge() {
-        return age;
+        return Age;
     }
 
     public void setAge(double age) {
-        this.age = age;
+        this.Age = age;
     }
 
     public String getHealthCondition() {
@@ -39,4 +39,5 @@ public class Dog extends Animal {
     public void setName(String name) {
         this.name = name;
     }
-}
+
+    }

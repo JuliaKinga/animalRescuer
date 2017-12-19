@@ -7,13 +7,13 @@ public class Calendar extends Planner {
     private String activityName;
     private LocalDate date;
 
-    public String getAcitvityName() {
+    public String getActivityName() {
         return activityName;
 
     }
 
-    public void setAcitvityName(String acitvityName) {
-        this.activityName = acitvityName;
+    public void setActivityName(String activityName) {
+        this.activityName = activityName;
     }
 
     public LocalDate getDate() {

@@ -4,9 +4,8 @@ import org.fasttrackit.accesories.Toy;
 
 import java.time.LocalDate;
 
-public class App
-{
-    public static void main( String[] args ) {
+public class App {
+    public static void main(String[] args) {
         Dog dog = new Dog();
         dog.setName("Rocky");
         dog.setAge(2.5);
@@ -40,31 +39,35 @@ public class App
         planner.setAppointments("doctor");
         planner.setEvents("birthday");
 
-        DogFood dogFood = new DogFood();
+        DogFood dogFood = new DogFood("pedigree");
         dogFood.setType("dry");
-        dogFood.setBrand("pedigree");
-        dogFood.setFlavor("chicken");
+        dogFood.setFlavor("beef");
         dogFood.setPackaging("bag");
         dogFood.setPrice(100);
         dogFood.setQuantity(9.5);
+
+        CatFood catFood = new CatFood();
+        catFood.setName("Whiskas");
+        catFood.setFlavor("fish");
 
         Training training = new Training();
         training.setCommand("sit");
         training.setSound("whistle");
 
         Calendar calendar = new Calendar();
-        calendar.setAcitvityName("training");
+        calendar.setActivityName("training");
         calendar.setDate(LocalDate.now());
 
+        EntertainmentActivity entertainmentActivity = new EntertainmentActivity();
+        entertainmentActivity.setName("Runing");
+
         rescuer.feed(dog, dogFood);
-        rescuer.entertain(dog,EntertainmentActivity);
+        rescuer.entertain(dog, entertainmentActivity);
 
+        rescuer.feed(cat, catFood);
+        rescuer.behavior(cat, entertainmentActivity);
 
-
-
-
-
-
-
+        planner.celebrate(dog, dog);
+        planner.celebrate(cat, cat);
     }
 }

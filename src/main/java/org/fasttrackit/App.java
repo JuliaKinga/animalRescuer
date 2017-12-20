@@ -43,7 +43,7 @@ public class App {
         dogFood.setType("dry");
         dogFood.setFlavor("beef");
         dogFood.setPackaging("bag");
-        dogFood.setPrice(100);
+        dogFood.setMoney(100);
         dogFood.setQuantity(9.5);
 
         CatFood catFood = new CatFood();
@@ -69,5 +69,9 @@ public class App {
 
         planner.celebrate(dog, dog);
         planner.celebrate(cat, cat);
+
+        catFood.payed(cat, catFood);
+        dogFood.payed(dog, dogFood);
+
     }
 }

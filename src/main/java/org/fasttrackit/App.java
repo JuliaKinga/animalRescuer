@@ -18,7 +18,8 @@ public class App {
         cat.setWeight(3.7);
         cat.setRole("companionship");
 
-        Rescuer rescuer = new Rescuer();
+        Rescuer rescuer =new Rescuer() {
+        };
         rescuer.setName("Julia");
         rescuer.setHomeType("appartment");
         rescuer.setMoney(500);
@@ -70,8 +71,7 @@ public class App {
         planner.celebrate(dog, dog);
         planner.celebrate(cat, cat);
 
-        catFood.payed(cat, catFood);
-        dogFood.payed(dog, dogFood);
+
+        }
 
     }
-}

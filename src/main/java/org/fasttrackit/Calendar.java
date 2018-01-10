@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 import java.time.LocalDate;
 
-public class Calendar extends Planner {
+class Calendar extends Planner {
 
     private String activityName;
     private LocalDate date;

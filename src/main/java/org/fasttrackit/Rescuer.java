@@ -1,10 +1,11 @@
 package org.fasttrackit;
 
-public class Rescuer {
+public abstract class Rescuer {
 
     private String name;
     private double money;
     private String homeType;
+
 
 
     public String getName() {
@@ -42,6 +43,12 @@ public class Rescuer {
             System.out.println(this.name + "just gave some" + CatFood.getName() + "food to" + animal.getName());}
 
      public void behavior(Animal animal, EntertainmentActivity entertainmentActivity){
-         System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "hunt" + animal.getName());
+         System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "hunt" + animal.getName());}
+
+    public void pay(Food food) {
+        this.money-=food.getPrice();
     }
-    }
+
+     }
+
+

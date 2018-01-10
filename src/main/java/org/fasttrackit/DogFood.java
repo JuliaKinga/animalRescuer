@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class DogFood extends Food {
 
-    private double money;
+
     private double quantity;
     private String flavor;
     private String type;
@@ -53,13 +53,4 @@ public class DogFood extends Food {
         this.name = name;
     }
 
-    @Override
-    public double getMoney() {
-        return money;
-    }
-
-    @Override
-    public void setMoney(double money) {
-        this.money = money;
-    }
 }

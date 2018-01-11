@@ -71,7 +71,8 @@ public class App {
         planner.celebrate(dog, dog);
         planner.celebrate(cat, cat);
 
-
+        Game game = new Game();
+        game.start();
         }
 
     }

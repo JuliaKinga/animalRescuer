@@ -40,7 +40,7 @@ public abstract class Rescuer {
         System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "run" + animal.getName());}
 
     public void feed(Animal animal, CatFood catFood){
-            System.out.println(this.name + "just gave some" + CatFood.getName() + "food to" + animal.getName());}
+        System.out.println(this.name + "just gave some" + catFood.getName() + "food to" + animal.getName());}
 
      public void behavior(Animal animal, EntertainmentActivity entertainmentActivity){
          System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "hunt" + animal.getName());}

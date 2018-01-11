@@ -2,18 +2,18 @@ package org.fasttrackit;
 
 public class CatFood extends Food {
 
-    private static String Name;
+    private String name;
     private String Flavor;
 
 
 
-    public static String getName() {
-        return Name;
+    public String getName() {
+        return name;
     }
 
-    public String setName(String name) {
-        return Name;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getFlavor() {
         return Flavor;

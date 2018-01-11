@@ -1,6 +1,15 @@
 package org.fasttrackit;
 
-public class Food{
+public class Food {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     private double money;
 
@@ -30,5 +39,6 @@ public class Food{
 
     public void setPrice(double price) {
         this.price = price;
-    }}
+    }
+}
 

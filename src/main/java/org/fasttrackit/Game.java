@@ -6,21 +6,22 @@ import java.util.List;
 
 public class Game {
 
-
     private Rescuer rescuer;
     private Animal animal;
     private DogFood dogFood;
     private Vet vet;
     private List<Food> availableFood = new ArrayList<Food>();
     private EntertainmentActivity[] availableActivities = new EntertainmentActivity[10];
-    private void showAvailableFood (){
+
+    private void showAvailableFood() {
 
         System.out.println("available food:");
 
-        for (Food food: availableFood){
+        for (Food food : availableFood) {
             System.out.println(food.getName());
         }
     }
+
     private void initFood() {
         Food food = new Food();
         food.setName("Akana");
@@ -30,9 +31,9 @@ public class Game {
 
         availableFood.add(food);
         availableFood.add(food1);
-        }
+    }
 
-    private void initActivities(){
+    private void initActivities() {
         EntertainmentActivity activity = new EntertainmentActivity();
         activity.setName("run");
 
@@ -43,11 +44,13 @@ public class Game {
         availableActivities[1] = activity1;
     }
 
-    public void start (){
+    public void start() {
         initFood();
         initActivities();
         showAvailableFood();
     }
+
+
     public List<Food> getAvailableFood() {
         return availableFood;
     }

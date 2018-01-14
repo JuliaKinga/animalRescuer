@@ -5,7 +5,7 @@ public abstract class Rescuer {
     private String name;
     private double money;
     private String homeType;
-
+    private String foodType;
 
 
     public String getName() {
@@ -34,7 +34,7 @@ public abstract class Rescuer {
 
 
     public void feed(Animal animal, DogFood dogFood) {
-        System.out.println(this.name + "just gave some" + dogFood.getName() + "food to" + animal.getName());}
+        System.out.printf(this.name +"just gave some" + dogFood.getName()+ "food to" +animal.getName());}
 
     public void entertain (Animal animal, EntertainmentActivity entertainmentActivity) {
         System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "run" + animal.getName());}
@@ -45,10 +45,29 @@ public abstract class Rescuer {
      public void behavior(Animal animal, EntertainmentActivity entertainmentActivity){
          System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "hunt" + animal.getName());}
 
-    public void pay(Food food) {
-        this.money-=food.getPrice();
+    public void pay(Food food) {this.money-=food.getPrice();}
+
+    public void feed(Animal animal) {
+        animal.hungerLevel -= 1;}
+
+    public void entertain(Animal animal) {
+        animal.happinessLevel +=1;
     }
 
-     }
+    public void feed(Animal animal) {
+        animal.favoriteFoodName = animal.happinessLevel + 1;}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 

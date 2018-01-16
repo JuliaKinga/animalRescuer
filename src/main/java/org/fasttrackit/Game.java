@@ -1,8 +1,9 @@
 package org.fasttrackit;
 
-import java.awt.*;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
 public class Game {
 
@@ -13,7 +14,32 @@ public class Game {
     private List<Food> availableFood = new ArrayList<Food>();
     private EntertainmentActivity[] availableActivities = new EntertainmentActivity[10];
 
-    private void showAvailableFood() {
+    private String initRescuer() {
+        System.out.println("Enter your name");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        System.out.println("Your name is:" + name);
+        try {
+            name = scanner.nextLine();
+        } catch (InputMismatchException exception) {
+            System.out.println("Please enter valid name");
+            return initRescuer();
+        }
+        System.out.println("You entered name");
+        return name;
+    }
+    private void initnameAnimal(){
+        System.out.println("Enter animal name");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        System.out.println("Animal name is:" + name);
+        try {
+            name = scanner.nextLine();
+        } catch (InputMismatchException exception) {
+            System.out.println("Please enter valid name");}
+          }
+
+     private void showAvailableFood() {
 
         System.out.println("available food:");
 
@@ -22,6 +48,10 @@ public class Game {
         }
     }
 
+    public void initAnimal(){
+         Animal animal = new Animal();
+         animal.setName("Rocky");
+    }
     private void initFood() {
         Food food = new Food();
         food.setName("Akana");
@@ -44,11 +74,37 @@ public class Game {
         availableActivities[1] = activity1;
     }
 
+    private void initrequireFeeding(){
+        System.out.println("Feed animal");
+        Scanner scanner = new Scanner(System.in);
+        String getfood  = scanner.nextLine();
+        System.out.println("Your food is" + getAvailableFood());{
+            try {
+                getfood = scanner.nextLine();
+            } catch (InputMismatchException exception) {
+                System.out.println("Please enter valid name");
+
+                for (Food foodType : availableFood) {                }
+                    if (availableFood != null) {
+                        System.out.println("You could chose other food");
+                    }
+
+                }
+
+        }
+
+    }
+
+
     public void start() {
         initFood();
         initActivities();
         showAvailableFood();
-    }
+        initAnimal();
+        initnameAnimal();
+        initrequireFeeding();
+
+        }
 
 
     public List<Food> getAvailableFood() {

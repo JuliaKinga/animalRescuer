@@ -2,22 +2,11 @@ package org.fasttrackit;
 
 public class EntertainmentActivity {
 
-    private String run;
     private String name;
 
-    public String getRun()
-
-    {
-        return run;
-
-    }
-    public void setRun(String run) {
-        this.run = run;
-    }
 
     public String getName() {
-        return name;
-    }
+        return name;}
 
     public void setName(String name) {
         this.name = name;

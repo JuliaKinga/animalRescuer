@@ -33,30 +33,27 @@ public abstract class Rescuer {
     }
 
 
-    public void feed(Animal animal, DogFood dogFood) {
-        System.out.printf(this.name +"just gave some" + dogFood.getName()+ "food to" +animal.getName());}
+    public void entertain(Animal animal, EntertainmentActivity entertainmentActivity) {
+        System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "run" + animal.getName());
+        animal.happinessLevel +=;
+        if (animal.activity.equals(animal.favoriteActivityName)) {
+            animal.happinessLevel + 2;
+        }
 
-    public void entertain (Animal animal, EntertainmentActivity entertainmentActivity) {
-        System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "run" + animal.getName());}
-
-    public void feed(Animal animal, CatFood catFood){
-        System.out.println(this.name + "just gave some" + catFood.getName() + "food to" + animal.getName());}
-
-     public void behavior(Animal animal, EntertainmentActivity entertainmentActivity){
-         System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "hunt" + animal.getName());}
-
-    public void pay(Food food) {this.money-=food.getPrice();}
-
-    public void feed(Animal animal) {
-        animal.hungerLevel -= 1;}
-
-    public void entertain(Animal animal) {
-        animal.happinessLevel +=1;
     }
 
-    public void feed(Animal animal) {
-        animal.favoriteFoodName = animal.happinessLevel + 1;}
+    public void pay(Food food) {
+        this.money -= food.getPrice();
     }
+
+    public void feed(Animal animal, Food food) {
+        System.out.println(this.name+"just gave some"+food.getName()+"food to"+animal.getName());
+        animal.hungerLevel--;
+        if(animal.favoriteFoodName.equals(food.name)){
+            animal.happinessLevel +=;}}}
+
+
+
 
 
 

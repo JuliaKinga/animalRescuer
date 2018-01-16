@@ -66,13 +66,15 @@ public class App {
         rescuer.entertain(dog, entertainmentActivity);
 
         rescuer.feed(cat, catFood);
-        rescuer.behavior(cat, entertainmentActivity);
+        rescuer.entertain(cat, entertainmentActivity);
 
         planner.celebrate(dog, dog);
         planner.celebrate(cat, cat);
 
         Game game = new Game();
         game.start();
+
+
         }
 
     }

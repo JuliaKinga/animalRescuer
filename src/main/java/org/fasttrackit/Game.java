@@ -1,5 +1,9 @@
 package org.fasttrackit;
 
+import org.fasttrackit.Animal.Animal;
+import org.fasttrackit.Food.DogFood;
+import org.fasttrackit.Food.Food;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -28,7 +32,8 @@ public class Game {
         System.out.println("You entered name");
         return name;
     }
-    private void initnameAnimal(){
+
+    private void initnameAnimal() {
         System.out.println("Enter animal name");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
@@ -36,10 +41,11 @@ public class Game {
         try {
             name = scanner.nextLine();
         } catch (InputMismatchException exception) {
-            System.out.println("Please enter valid name");}
-          }
+            System.out.println("Please enter valid name");
+        }
+    }
 
-     private void showAvailableFood() {
+    private void showAvailableFood() {
 
         System.out.println("available food:");
 
@@ -48,10 +54,11 @@ public class Game {
         }
     }
 
-    public void initAnimal(){
-         Animal animal = new Animal();
-         animal.setName("Rocky");
+    public void initAnimal() {
+        Animal animal = new Animal();
+        animal.setName("Rocky");
     }
+
     private void initFood() {
         Food food = new Food();
         food.setName("Akana");
@@ -74,19 +81,24 @@ public class Game {
         availableActivities[1] = activity1;
     }
 
-    private void initrequireFeeding(){
+    private void initrequireFeeding() {
         System.out.println("Feed animal");
         Scanner scanner = new Scanner(System.in);
-        String getfood  = scanner.nextLine();
-        System.out.println("Your food is" + getAvailableFood());{
+        String getfood = scanner.nextLine();
+        System.out.println("Your food is" + getAvailableFood());
+        {
             try {
                 getfood = scanner.nextLine();
             } catch (InputMismatchException exception) {
-                System.out.println("Please enter valid name");}}
+                System.out.println("Please enter valid name");
+            }
+        }
 
-                for (Food foodType : availableFood) {
-                if (foodType != null) {
-                    System.out.println("You could chose other food"); } }
+        for (Food foodType : availableFood) {
+            if (foodType != null) {
+                System.out.println("You could chose other food");
+            }
+        }
 
     }
 
@@ -99,7 +111,19 @@ public class Game {
         initnameAnimal();
         initrequireFeeding();
 
+        for (int i = 0; i < 10; i++) {
+            initrequireFeeding();
+            initActivities();
+            if (animal.happinessLevel <= 10) {
+                System.out.println("Congratulations your pet is the happiest");
+                break;
+            }
+            if (animal.hungerLevel <= 10) {
+                System.out.println("Congratulations your pet if not hungry");
+                break;
+            }
         }
+    }
 
 
     public List<Food> getAvailableFood() {

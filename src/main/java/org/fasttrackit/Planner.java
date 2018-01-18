@@ -1,5 +1,9 @@
 package org.fasttrackit;
 
+import org.fasttrackit.Animal.Animal;
+import org.fasttrackit.Animal.Cat;
+import org.fasttrackit.Animal.Dog;
+
 public class Planner {
     private String todo;
     private String appointments;

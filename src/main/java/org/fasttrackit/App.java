@@ -1,6 +1,9 @@
 package org.fasttrackit;
 
-import org.fasttrackit.accesories.Toy;
+import org.fasttrackit.Animal.Cat;
+import org.fasttrackit.Animal.Dog;
+import org.fasttrackit.Food.CatFood;
+import org.fasttrackit.Food.DogFood;
 
 import java.time.LocalDate;
 

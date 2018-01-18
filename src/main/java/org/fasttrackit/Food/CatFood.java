@@ -1,4 +1,6 @@
-package org.fasttrackit;
+package org.fasttrackit.Food;
+
+import org.fasttrackit.Food.Food;
 
 public class CatFood extends Food {
 

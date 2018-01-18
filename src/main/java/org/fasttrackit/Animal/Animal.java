@@ -1,4 +1,4 @@
-package org.fasttrackit;
+package org.fasttrackit.Animal;
 
 public class Animal{
 

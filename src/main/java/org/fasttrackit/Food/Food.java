@@ -1,4 +1,4 @@
-package org.fasttrackit;
+package org.fasttrackit.Food;
 
 public class Food {
     public String name;

@@ -1,5 +1,8 @@
 package org.fasttrackit;
 
+import org.fasttrackit.Animal.Animal;
+import org.fasttrackit.Food.Food;
+
 public abstract class Rescuer {
 
     private String name;

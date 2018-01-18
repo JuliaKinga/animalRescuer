@@ -1,4 +1,6 @@
-package org.fasttrackit;
+package org.fasttrackit.Animal;
+
+import org.fasttrackit.Animal.Animal;
 
 public class Cat extends Animal {
 

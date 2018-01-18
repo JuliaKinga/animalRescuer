@@ -82,16 +82,11 @@ public class Game {
             try {
                 getfood = scanner.nextLine();
             } catch (InputMismatchException exception) {
-                System.out.println("Please enter valid name");
+                System.out.println("Please enter valid name");}}
 
-                for (Food foodType : availableFood) {                }
-                    if (availableFood != null) {
-                        System.out.println("You could chose other food");
-                    }
-
-                }
-
-        }
+                for (Food foodType : availableFood) {
+                if (foodType != null) {
+                    System.out.println("You could chose other food"); } }
 
     }
 

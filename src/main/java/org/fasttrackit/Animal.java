@@ -8,7 +8,7 @@ public class Animal{
     public String favoriteActivityName;
     public String name;
     public double hungerLevel;
-    public String happinessLevel;
+    public int happinessLevel;
     public String activity;
 
     public String getAnimal() {
@@ -25,14 +25,6 @@ public class Animal{
 
     public void setActivity(String activity) {
         this.activity = activity;
-    }
-
-    public String getHappinessLevel() {
-        return happinessLevel;
-    }
-
-    public void setHappinessLevel(String happinessLevel) {
-        this.happinessLevel = happinessLevel;
     }
 
     public double getHungerLevel() {

@@ -35,9 +35,9 @@ public abstract class Rescuer {
 
     public void entertain(Animal animal, EntertainmentActivity entertainmentActivity) {
         System.out.println(this.name + "just did some" + entertainmentActivity.getName() + "run" + animal.getName());
-        animal.happinessLevel +=;
+        animal.happinessLevel = 1;
         if (animal.activity.equals(animal.favoriteActivityName)) {
-            animal.happinessLevel + 2;
+            animal.happinessLevel = 1;
         }
 
     }
@@ -50,7 +50,7 @@ public abstract class Rescuer {
         System.out.println(this.name+"just gave some"+food.getName()+"food to"+animal.getName());
         animal.hungerLevel--;
         if(animal.favoriteFoodName.equals(food.name)){
-            animal.happinessLevel +=;}}}
+            animal.happinessLevel =2 ;}}}
 
 
 
